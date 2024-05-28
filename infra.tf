@@ -164,9 +164,8 @@ resource "aws_iam_role_policy_attachment" "eks_worker_AmazonEC2ContainerRegistry
 }
 
 resource "aws_instance" "BuildEC2" {
-  ami             = "ami-05fb0b8c1424f266b" # Specify the desired AMI ID
+  ami             = "ami-09040d770ffe2224f" # Specify the desired AMI ID
   instance_type   = "t2.medium"
-  key_name        = "linux"
   vpc_security_group_ids  = [aws_security_group.eks_cluster_sg.id]
   tags = {
     Name        = "Build Server"
