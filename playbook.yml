@@ -1,4 +1,4 @@
 - hosts: local
   tasks:
   - name: Apply Kubernetes deployment
-    command: kubectl apply -f /var/lib/jenkins/workspace/demo/deploy.yml
+    command: kubectl apply -f /var/lib/jenkins/workspace/A-dev/deploy.yml
